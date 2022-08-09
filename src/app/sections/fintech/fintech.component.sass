@@ -1,0 +1,296 @@
+@import 'src/styles'
+
+.content-intro
+  background:
+    color: #6c4f92
+  height: 100vh
+  display: flex
+  flex-direction: row
+  align-content: space-around
+  align-items: center
+  padding:
+    top: 60px
+    left: 20px
+    bottom: 50px
+  position: relative
+  z-index: 2
+  .video
+    position: absolute
+    z-index: 1
+    width: 43%
+    right: 0
+    bottom: 0
+    border-bottom-left-radius: 7%
+
+.body-text-intro
+  position: relative
+  z-index: 3
+  line-height: 0.5
+  padding-top: 10%
+
+.text-intro-1
+  font:
+    size: 160px
+    family: 'Dongle Bold'
+  color: white
+  letter-spacing:-3px
+
+.text-intro-2
+  font:
+    size: 380px
+    family: 'Dongle Bold'
+  color: white
+  letter-spacing:-18px
+
+
+.text-intro-3
+  font:
+    size: 130px
+    family: 'Dongle Bold'
+    line-height: 30px
+  color: white
+  letter-spacing:-5px
+
+
+.text-footer
+  position: relative
+  z-index: 3
+  font:
+    size: 50px
+    family: 'Comfortaa Light'
+  color: white
+  line-height: 1
+
+strong
+  color: $color-amarillo
+
+#hrIntro
+  width: 8px
+  height: 43vh
+  border-radius: 50px
+  margin-top: 7%
+  margin-right: 0px
+  color: $color-amarillo
+  opacity: 100
+
+@media (max-width: 1670px)
+
+    .content-intro
+      background:
+        size: 110%
+
+    .body-text-intro
+      padding-top: 15%
+
+    .text-intro-1
+      font:
+        size: 140px
+
+    .text-intro-2
+      font:
+        size: 330px
+
+    .text-intro-3
+      font:
+        size: 110px
+
+    #hrIntro
+      margin-top: 12%
+
+@media (max-width: 1430px)
+    .content-intro
+      background:
+        size: 130%
+      .video
+        width: 43%
+
+    .body-text-intro
+      padding-top: 10%
+
+    .text-intro-1
+      font:
+        size: 120px
+
+    .text-intro-2
+      font:
+        size: 300px
+
+    .text-intro-3
+      font:
+        size: 110px
+
+    #hrIntro
+      margin-top: 8%
+
+    .footer-text-intro
+      .text-footer
+        font-size: 30px
+
+@media (max-width: 1280px)
+    .content-intro
+      background:
+        size: 140%
+      .video
+        width: 60%
+
+    .body-text-intro
+      width: 80%
+
+    .text-intro-1
+      font:
+        size: 115px
+
+    .text-intro-2
+      font:
+        size: 280px
+
+    .text-intro-3
+      font:
+        size: 95px
+
+    .text-footer
+      font:
+        size: 40px
+
+    #hrIntro
+      height: 22vh
+      margin-top: 17%
+
+@media (max-width: 980px)
+    .content-intro
+      .video
+        display: none
+
+    .text-intro
+      font:
+        size: 120px
+
+    .text-footer
+      font:
+        size: 35px
+
+@media (max-width: 890px)
+    .body-text-intro
+      width: 80%
+
+    .text-intro
+      font:
+        size: 120px
+
+    .text-footer
+      font:
+        size: 30px
+
+    #hrIntro
+      height: 25vh
+      margin-top: 20%
+
+@media (max-width: 750px)
+
+    .text-intro-1
+      font:
+        size: 100px
+
+    .text-intro-2
+      font:
+        size: 220px
+      letter-spacing: -5px
+
+    .text-intro-3
+      font:
+        size: 85px
+        letter-spacing: 25px
+
+@media (max-width: 600px)
+  .body-text-intro
+    width: 90%
+    line-height: 40px
+    .text-intro-1
+      font-size: 60px
+    .text-intro-2
+      font-size: 130px
+    .text-intro-3
+      font-size: 40px
+      letter-spacing: 0px
+      margin-top: -15px
+  #hrIntro
+    height: 23vh
+    margin-top: 10%
+    padding: 0px
+
+  .text-footer
+    font:
+      size: 25px
+
+// @media (max-width: 600px)
+//     .body-text-intro
+//       width: 88%
+
+//     .text-intro-1
+//       font:
+//         size: 90px
+
+//     .text-intro-2
+//       font:
+//         size: 170px
+//       letter-spacing: -5px
+
+//     .text-intro-3
+//       font:
+//         size: 75px
+//         letter-spacing: 25px
+
+//     .text-footer
+//       font:
+//         size: 23px
+//       margin-bottom: 0px
+
+//     #hrIntro
+//       height: 20vh
+
+@media only screen and (max-width: 480px)
+    .text-intro-1
+      font:
+        size: 110px
+    .text-intro-2
+      font:
+        size: 130px
+    .text-intro-3
+      font:
+        size: 100px
+
+    .text-footer
+      font:
+        size: 17px
+
+    #hrIntro
+      height: 17vh
+
+@media only screen and (max-width: 400px)
+    .text-intro-1
+      font:
+        size: 110px
+    .text-intro-2
+      font:
+        size: 130px
+    .text-intro-3
+      font:
+        size: 100px
+
+    .text-footer
+      text-align: center
+      font:
+        size: 18px
+    #hrIntro
+      height: 17vh
+
+@media only screen and (max-width: 360px)
+    .text-intro
+      font:
+        size: 60px
+
+    .text-footer
+      font:
+        size: 25px
+      line-height: 1.5
+      text-align: center

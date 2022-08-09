@@ -1,0 +1,36 @@
+
+<div class="nav-general" [ngClass]="{'purpple' : style1, 'white' : style2}">
+  <div class="column-logo center-content">
+    <img *ngIf="style1" class="img_logo" src=" ../../../../../assets/img/Xisfo-Blanco.webp" alt="xisfo-factory" />
+    <img *ngIf="!style1" class="img_logo" src=" ../../../../../assets/img/Xisfo-Mordado.webp" alt="xisfo-factory" />
+  </div>
+  <div class="column-menu" [ngClass]="{'enableMenu' : mobileMenu}">
+    <ul class="menu" [ngClass]="{'purpple' : style1, 'white' : style2}">
+      <li><a class="link" href="#home">Home</a></li>
+      <li class="active"><a class="link" href="#sectionThree">Tu Cuenta</a>
+        <div class="dropdown">
+          <ul>
+            <li><a class="link_sub" href="#sectionThre">Xisfo Personas</a></li>
+            <li><a class="link_sub" href="#sectionThre">Xisfo Pymes</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a class="link" href="#section-nicho">Nichos</a></li>
+      <li><a class="link" href="#manifest">Manifiesto</a></li>
+      <li><a class="link" href="#section-for-you">Por qué Xisfo</a></li>
+      <li><a class="link" href="#team">Nosotros</a></li>
+      <li><a class="link" href="#sectionEight">Contáctenos</a></li>
+    </ul>
+    <div class="column-button center-content mobile-column">
+      <button [ngClass]="{'purpple' : style1, 'white' : style2}" class="btn-login" (click)="openDialog()">Login </button>
+    </div>
+  </div>
+  <div class="column-button center-content">
+    <button class="btn-login" [ngClass]="{'purpple' : style1, 'white' : style2}" (click)="openDialog()">Login </button>
+  </div>
+</div>
+
+<button (click)="openMenuMovil()" class="btn-menu-movil">
+  <i class="pi pi-align-justify"></i>
+</button>
+

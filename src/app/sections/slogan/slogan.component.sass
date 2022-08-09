@@ -1,0 +1,151 @@
+@import 'src/styles'
+
+.sectionPhrase
+
+  .div-parallel-lg
+    height: 90vh
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+    .div-text-one
+      background-color: $color-morado
+      flex-direction: column
+      justify-content: center
+      height: 100%
+      width: 60%
+      display: flex
+      text-align: center
+      line-height: 33px
+      #p-title-1
+        width: 100%
+        text-align: center
+        font:
+          family: 'Dongle Bold'
+          size: 193px
+        line-height: 0.3
+        color: white
+        letter-spacing: -8px
+      #p-title-2
+        width: 100%
+        text-align: center
+        font:
+          family: 'Dongle Bold'
+          size: 68px
+        color: white
+
+      #p-title-3
+        width: 100%
+        text-align: center
+        font:
+          family: 'Dongle Bold'
+          size: 97px
+        color: white
+        letter-spacing: 0px
+
+    .div-text-two
+      background-color: $color-amarillo
+      display: flex
+      flex-direction: column
+      justify-content: center
+      text-align: center
+      height: 100%
+      width: 60%
+      line-height: 54px
+
+      #p-title-1
+        width: 100%
+        text-align: center
+        font:
+          family: 'Dongle Bold'
+          size: 163px
+        color: $color-morado
+        letter-spacing: -2px
+
+      #p-title-2
+        width: 100%
+        text-align: center
+        font:
+          family: 'Dongle Bold'
+          size: 109px
+        color: $color-morado
+        letter-spacing: -2px
+
+      #p-title-3
+        width: 100%
+        text-align: center
+        font:
+          family: 'Dongle Bold'
+          size: 154px
+        color: $color-morado
+        letter-spacing: -4px
+
+@media (max-width: 1400px)
+  .sectionPhrase
+    .div-parallel-lg
+      .div-text-one
+        line-height: 18px
+        #p-title-1
+          font-size: 128px
+        #p-title-2
+          font-size: 43px
+        #p-title-3
+          font-size: 62px
+
+      .div-text-two
+        line-height: 42px
+        #p-title-1
+          font-size: 133px
+        #p-title-2
+          font-size: 90px
+        #p-title-3
+          font-size: 129px
+
+@media (max-width: 950px)
+  .sectionPhrase
+    .div-parallel-lg
+      .div-text-one
+        line-height: 14px
+        #p-title-1
+          font-size: 88px
+          letter-spacing: -3px
+        #p-title-2
+          font-size: 31px
+        #p-title-3
+          font-size: 44px
+
+      .div-text-two
+        line-height: 29px
+        #p-title-1
+          font-size: 96px
+        #p-title-2
+          font-size: 66px
+        #p-title-3
+          font-size: 96px
+
+@media (max-width: 650px)
+  .sectionPhrase
+    .div-parallel-lg
+      flex-direction: column
+      align-items: center
+      .div-text-one
+        width: 100%
+        line-height: 14px
+        #p-title-1
+          font-size: 88px
+          letter-spacing: -3px
+        #p-title-2
+          font-size: 31px
+        #p-title-3
+          font-size: 44px
+          letter-spacing: 0px
+
+      .div-text-two
+        width: 100%
+        line-height: 29px
+        #p-title-1
+          font-size: 96px
+        #p-title-2
+          font-size: 66px
+        #p-title-3
+          font-size: 96px

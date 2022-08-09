@@ -1,0 +1,55 @@
+@import 'src/styles'
+
+h1
+  font:
+    size: 100px
+    family: 'Dongle Bold'
+  color:#6c4f92
+
+p
+  font:
+    size: 50px
+    family: 'Dongle Bold'
+  color:#6c4f92
+  margin-bottom: 0px
+
+.p-text
+  height: 60px
+
+strong
+  font:
+    size: 130px
+    family: 'Dongle Bold'
+  color:#6c4f92
+
+img
+  width: 50%
+
+.col
+  display: flex
+  flex-direction: column
+  align-items: center
+  line-height: 60px
+
+#text-intro
+  .col
+    padding: 10px
+
+@media (max-width: 1000px)
+  h1
+    margin-left: 50px
+  strong
+    font:
+      size: 100px
+
+@media (max-width: 780px)
+  strong
+    font:
+      size: 80px
+  .grid-4
+    display: flex
+    flex-direction: column
+    align-content: center
+  h1
+    font-size: 40px
+    padding: 15px 0px 25px 0px

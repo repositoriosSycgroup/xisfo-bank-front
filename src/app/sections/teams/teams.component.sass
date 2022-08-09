@@ -1,0 +1,92 @@
+@import 'src/styles'
+
+.content-carousel
+  position: relative
+  overflow: hidden
+  h1
+    text-align: center
+    margin-bottom: 20px
+    font:
+      family: 'Dongle Bold'
+      weight: 500
+      size: 80px
+    color: $color-morado
+
+.carousel
+  position: relative
+  height: 800px
+  width: 700px
+  left: 52%
+  /* or absolute
+  @media (max-width: 790px)
+    left: 57%
+
+
+.carousel__cell
+  position: absolute
+  width: 550px
+  height: 650px
+  left: 10px
+  top: 10px
+
+
+.carousel > div .image
+  width: 90%
+  position: relative
+
+.author_carousel
+  color: $color-morado
+  z-index: 999
+  position: relative
+  text-align: center
+  font-size: 36px
+  text-transform: uppercase
+  font-family: 'Dongle Bold'
+  display: none
+  left: -22px
+  @media (max-width: 500px)
+    background: #000
+    right: 6%
+    left: 0px
+    padding: 4px
+
+.prev_btn
+  position: absolute
+  left: 40px
+  height: 100px
+  top: 50%
+  padding: 10px
+  border: 2px solid $color-morado
+  color: $color-morado
+  background: transparent
+  border-radius: 4px
+  z-index: 999
+  @media (max-width: 790px)
+    top: 40%
+    height: 200px
+
+  &:hover
+    background: $color-amarillo
+    color: $color-blanco
+    border: 2px solid $color-amarillo
+
+
+.next_btn
+  position: absolute
+  height: 100px
+  right: 40px
+  top: 50%
+  padding: 10px
+  border: 2px solid $color-morado
+  color: $color-morado
+  background: transparent
+  border-radius: 4px
+  z-index: 999
+  @media (max-width: 790px)
+    top: 40%
+    height: 200px
+  &:hover
+    background: $color-amarillo
+    color: $color-blanco
+    border: 2px solid $color-amarillo
+

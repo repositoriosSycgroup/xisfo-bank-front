@@ -1,0 +1,432 @@
+/* You can add global styles to this file, and also import other style files */
+
+// *********************************
+// Fuentes importadas
+// *********************************
+
+@font-face
+  font-family: 'Comfortaa Bold'
+  src: url(/assets/Fonts/Comfortaa-Bold.ttf) format('truetype')
+
+@font-face
+  font-family: 'Comfortaa Light'
+  src: url(/assets/Fonts/Comfortaa-Light.ttf) format('truetype')
+
+@font-face
+  font-family: 'Comfortaa Regular'
+  src: url(/assets/Fonts/Comfortaa-Regular.ttf) format('truetype')
+
+@font-face
+  font-family: 'Dongle Bold'
+  src: url(/assets/Fonts/Dongle-Bold.ttf) format('truetype')
+
+@font-face
+  font-family: 'Dongle Regular'
+  src: url(/assets/Fonts/Dongle-Regular.ttf) format('truetype')
+
+// *********************************
+// Variables globales
+// *********************************
+$color-morado: #644f86
+$color-amarillo: #e6d05c
+$color-blanco: #ffffff
+
+// *********************************
+// Estilos globales
+// *********************************
+
+.row
+  margin: 0px
+
+@media (max-width: 1670px)
+
+    // ****************************
+    // Section 9 - App
+    // ****************************
+    .p-app
+        font-size: 130px
+
+    h6
+        font-size: 120px
+
+    .divImgApp
+        padding-top: 0px
+
+    .imgApp
+        width: 100%
+    // ****************************
+    // Section 9 - App end
+    // ****************************
+@media (max-width: 1430px)
+
+    // *********************************
+    // Section 6 - Ecosistema Xisfo
+    // *********************************
+
+    .sectionSix
+      .div-ecosistema-lg
+
+        .div-img
+          width: 55%
+          img
+            width: 75%
+        .div-text
+          #p-title
+            font:
+              size: 75px
+            margin-bottom: 50px
+          #p-subtitle
+            font:
+              size: 50px
+          #p-text
+            font:
+              size: 16px
+    // *********************************
+    // Section 6 - Ecosistema Xisfo end
+    // *********************************
+    // ****************************
+    // Section 9 - App
+    // ****************************
+
+    .p-app
+        font-size: 80px
+
+    h6
+        font-size: 60px
+
+    #playStoreImg
+        width: 200px
+
+    #appleStoreImg
+        width: 200px
+
+    // ****************************
+    // Section 9 - App end
+    // ****************************
+
+    // ****************************
+    // Section 3 - Banka
+    // ****************************
+    .card-title
+        font:
+            size: 150px
+
+    .card-subtitle
+        font:
+            size: 2rem
+    .cardTwo-title
+        font:
+            size: 150px
+
+    .cardTwo-subtitle
+        font:
+            size: 2rem
+    // ****************************
+    // Section 3 - Banka End
+    // ****************************
+
+@media (max-width: 980px)
+
+    // ****************************
+    // Section 6 - Ecosistema
+    // ****************************
+    .sectionSix
+      .div-ecosistema-lg
+        .div-img
+          width: 55%
+          img
+            width: 90%
+    // ****************************
+    // Section 6 - Ecosistema End
+    // ****************************
+
+    // ****************************
+    // Section 3 - Banka
+    // ****************************
+    .card-title
+      padding-top: 10px
+      font:
+          size: 90px
+
+    .card-subtitle
+      padding-top: 10px
+      font:
+          size: 2rem
+    .cardTwo-title
+      padding-top: 10px
+      font:
+          size: 90px
+
+    .cardTwo-subtitle
+      padding-top: 10px
+      font:
+          size: 2rem
+    // ****************************
+    // Section 3 - Banka End
+    // ****************************
+@media (max-width: 890px)
+
+
+    // ****************************
+    // Section 6 - Ecosistema
+    // ****************************
+    .sectionSix
+      .div-ecosistema-lg
+        .div-img
+          width: 60%
+          img
+            width: 90%
+        .div-text
+          #p-title
+            font:
+              size: 60px
+            margin-bottom: 30px
+          #p-subtitle
+            font:
+              size: 35px
+          #p-text
+            font:
+              size: 14px
+    // ****************************
+    // Section 6 - Ecosistema End
+    // ****************************
+
+    // ****************************
+    // Section 4 - Resumen
+    // ****************************
+    .three
+        font:
+            size: 400px
+
+    .spacefour
+        justify-content: center
+
+    .spacefour2
+        justify-content: center
+
+    .textResumen
+        font:
+            size: 70px
+        padding: 0px 20px
+
+    .resumenLine
+        width: 80%
+        height: 6px
+        margin: 30px 40px
+
+    // ****************************
+    // Section 4 - Resumen End
+    // ****************************
+
+    // ****************************
+    // Section 9 - App
+    // ****************************
+
+    .p-app
+        font-size: 60px
+
+    .divImgApp
+        padding-top: 20px
+        width: 55%
+
+    .storeImgs
+        flex-direction: column
+
+    #appleStoreImg
+        margin-bottom: 20px
+
+    hr
+        width: 80%
+        height: 6px
+        margin: 40px 0px
+
+    // ****************************
+    // Section 9 - App end
+    // ****************************
+@media (max-width: 850px)
+    // ****************************
+    // Section 6 - Ecosistema
+    // ****************************
+    .sectionSix
+      .div-ecosistema-lg
+        display: none
+      .div-ecosistema-sm
+        display: flex
+        justify-content: center
+        align-items: center
+        min-height: 90vh
+        background-color: $color-amarillo
+        img
+          width: 50% !important
+    // ****************************
+    // Section 6 - Ecosistema End
+    // ****************************
+@media (max-width: 700px)
+
+    // ****************************
+    // Section 7 - Testimonial
+    // ****************************
+    .display-md
+      display: none
+
+    .display-sm
+      display: block
+    // *********************************
+    // Section 7 - Testimonial end
+    // *********************************
+
+    // ****************************
+    // Section 9 - App
+    // ****************************
+
+    .p-app
+        font-size: 50px
+
+    h6
+        font-size: 40px
+
+    #playStoreImg
+        width: 150px
+        height: 50px
+
+    #appleStoreImg
+        width: 150px
+        height: 50px
+        margin-bottom: 20px
+
+    .divImgApp
+        padding-top: 30px
+        width: 55%
+
+    .storeImgs
+        flex-direction: column
+
+    // ****************************
+    // Section 9 - App end
+    // ****************************
+@media (max-width: 700px)
+    // ****************************
+    // Section 6 - Ecosistema
+    // ****************************
+    .sectionSix
+      .div-ecosistema-sm
+        min-height: 70vh
+    // ****************************
+    // Section 6 - Ecosistema End
+    // ****************************
+@media (min-width: 700px)
+
+    // ****************************
+    // Section 7 - Testimonial
+    // ****************************
+    .display-md
+      display: block
+
+    .display-sm
+      display: none
+    // *********************************
+    // Section 7 - Testimonial end
+    // *********************************
+@media (max-width: 600px)
+
+    // ****************************
+    // Section 4 - Resumen
+    // ****************************
+
+    .textResumen
+        font:
+            size: 55px
+    .iconoFlecha
+        font-size: 2rem
+    // ****************************
+    // Section 4 - Resumen end
+    // ****************************
+
+    // ****************************
+    // Section 9 - App
+    // ****************************
+
+    .content-app
+        flex-direction: column
+
+    .p-app
+        font-size: 40px
+
+    h6
+      margin-top: -15px
+      font-size: 50px
+
+    #playStoreImg
+        width: 200px
+
+    #appleStoreImg
+        width: 200px
+
+    .divImgApp
+        padding-top: 0px
+        width: 100%
+        order: 2
+        height: 100%
+
+    .storeImgs
+        flex-direction: row
+
+    // ****************************
+    // Section 9 - App end
+    // ****************************
+@media only screen and (max-width: 480px)
+
+    // ****************************
+    // Section 6 - Ecosistema
+    // ****************************
+    .sectionSix
+      .div-ecosistema-sm
+        img
+          width: 75% !important
+    // ****************************
+    // Section 6 - Ecosistema End
+    // ****************************
+
+    // ****************************
+    // Section 9 - App
+    // ****************************
+
+    .p-app
+      margin-top: 5%
+      font-size: 35px
+
+    h6
+      font-size: 40px
+
+    #playStoreImg
+      width: 170px
+      margin-bottom: 20px
+
+    #appleStoreImg
+      width: 170px
+
+    .divImgApp
+      padding-top: 0px
+
+    // ****************************
+    // Section 9 - App end
+    // ****************************
+@media only screen and (max-width: 400px)
+
+@media only screen and (max-width: 360px)
+
+    // ****************************
+    // Section 4 - Resumen
+    // ****************************
+
+    .textResumen
+        font:
+            size: 50px
+        padding: 0px 20px
+
+    .iconoFlecha
+        font:
+            size: 1.8rem
+    // ****************************
+    // Section 4 - Resumen End
+    // ****************************

@@ -1,0 +1,251 @@
+@import 'src/styles'
+
+.row
+  margin: 0px
+
+// ****************************
+// Section 8 - Form
+// ****************************
+
+.content-contact
+  padding:
+      left: 30px
+
+// styles for header and subheader contact
+.p-contact
+  font:
+    family: 'Dongle bold'
+    size: 120px
+  height: 120px
+
+h3
+  font:
+    family: 'Comfortaa Regular'
+    size: 30px
+  margin-bottom: 25px
+  color: black !important
+// styles for input and form
+
+input
+  border-radius: 30px
+  border: 0px
+  background: #b6b6b6
+  padding: 20px
+  width: 80%
+  height: 50px
+  margin-top: 20px
+  &:focus
+    border: 3px solid #644f86
+
+.text-danger
+  padding-left: 20px
+  font-size: 15px
+
+::placeholder
+  font:
+    family: 'Comfortaa Regular'
+    size: 20px
+
+.checkboxDiv
+  padding-left: 50px
+
+#politics
+  width: 20px
+  height: 20px
+  accent-color: #644f86
+
+label
+  font:
+    family: 'Comfortaa Regular'
+    size: 20px
+
+.buttonDiv
+  display: flex
+  justify-content: center
+  margin-bottom: 50px
+  align-items: center
+  button
+    margin-left: 15px
+
+.sendButton
+  border-radius: 30px
+  border: 0px
+  background: #644f86
+  width: 180px
+  height: 40px
+  font:
+    family: 'Comfortaa Regular'
+    size: 20px
+  color: white
+  &:disabled
+    opacity: 50%
+
+.imgsDiv
+  display: flex
+  align-items: flex-end
+  margin-bottom: -32px
+
+.contact-icons
+  width: 360px
+  height: 450px
+
+#icon-img
+  width: 100%
+
+.contact-img
+  right: 130px
+  position: absolute
+
+#form-img
+  width: 400px
+  height: 650px
+
+@media (max-width: 1700px)
+
+  .contact-img
+    right: 100px
+
+@media (max-width: 1500px)
+
+  .contact-img
+    right: 30px
+
+  #icon-img
+    width: 80%
+
+@media (max-width: 1300px)
+
+  .contact-img
+    right: 0px
+
+  .p-contact
+    font:
+      size: 100px
+    height: 100px
+
+  h3
+    font:
+      family: 'Comfortaa Regular'
+      size: 20px
+
+  input
+    width: 100%
+
+@media (max-width: 1050px)
+
+  .contact-icons
+    left: 150px
+    opacity: 50%
+    position: absolute
+    z-index: -1
+
+  #icon-img
+    width: 100%
+
+  .contact-img
+    right: 80px
+    z-index: -1
+
+  #form-img
+    width: 400px
+    height: 600px
+
+@media (max-width: 795px)
+
+  .contact-icons
+    display: none
+
+  .contact-img
+    right: 80px
+    opacity: 50%
+    z-index: -1
+
+  #form-img
+    width: 400px
+    height: 650px
+
+  .p-contact
+    font:
+      size: 80px
+    height: 100px
+
+  h3
+    font:
+      family: 'Comfortaa Regular'
+      size: 20px
+
+  input
+    width: 100%
+
+@media (max-width: 655px)
+
+  .content-contact
+    padding:
+        left: 0px
+
+  #form-img
+    height: 610px
+
+  .p-contact-header
+    display: flex
+    justify-content: center
+
+  .p-contact
+    font:
+      size: 60px
+    height: 60px
+
+  h3
+    font:
+      size: 19px
+
+@media (max-width: 480px)
+
+  .p-contact-header
+    display: flex
+    justify-content: center
+
+  .p-contact
+    font:
+      size: 50px
+    margin-top: 20px
+
+  .contact-img
+    right: 30px
+
+  h3
+    font:
+      size: 23px
+    line-height: 1
+
+  .checkboxDiv
+    padding-left: 0px
+
+  label
+    font:
+      size: 18px
+
+@media (max-width: 405px)
+
+  .p-contact
+    font:
+      size: 40px
+    height: 40px
+
+  #form-img
+    width: 380px
+
+  .contact-img
+    right: 10px
+
+  h3
+    font:
+      size: 18px
+
+  label
+    font:
+      size: 15px
+
+  #politics
+    width: 15px
+    height: 15px

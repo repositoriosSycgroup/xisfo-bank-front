@@ -1,0 +1,78 @@
+<div *ngIf="loading; else startLoading">
+
+  <section id="home" class="sectionWefit">
+    <app-wefit></app-wefit>
+  </section>
+
+  <section id="sectionOne" class="sectionOne">
+    <app-fintech></app-fintech>
+  </section>
+
+  <section id="sectionThree" class="sectionThree">
+    <app-banka></app-banka>
+  </section>
+
+  <section id="section-nicho" class="section-nicho">
+    <app-nicho></app-nicho>
+  </section>
+
+  <section id="section-slogan">
+    <app-slogan></app-slogan>
+  </section>
+
+  <section class="sectionGrowth" id="grwoth">
+    <app-growth></app-growth>
+  </section>
+
+  <section id="team">
+    <app-teams></app-teams>
+  </section>
+
+  <section class="sectionEntreprenur">
+    <app-entrepreneur></app-entrepreneur>
+  </section>
+
+  <section id="section-for-you" class="section-for-you">
+    <app-for-you></app-for-you>
+  </section>
+
+<section id="manifest">
+  <app-manifest></app-manifest>
+</section>
+
+<section id="sectionEight" class="sectionEight">
+  <app-contact-us></app-contact-us>
+</section>
+
+  <!-- <section class="sectionOne" style="margin-top: 120px">
+  <app-teams></app-teams>
+</section> -->
+
+  <!-- <section class="sectionTwo">
+  <app-business-model></app-business-model>
+</section> -->
+
+  <!-- <section class="sectionFour">
+  <app-resume></app-resume>
+</section> -->
+
+  <!-- <section class="sectionFive">
+  <app-segments></app-segments>
+</section> -->
+
+  <!-- <section class="sectionSix">
+  <app-cash-back></app-cash-back>
+</section> -->
+
+  <!-- <section class="sectionSeven">
+  <app-testimonial class="display-md"></app-testimonial>
+  <app-testimonial-responsive class="display-sm"></app-testimonial-responsive>
+</section> -->
+
+  <!-- <section class="sectionNine">
+  <app-app-xisfo></app-app-xisfo>
+</section> -->
+</div>
+<ng-template #startLoading>
+  <app-loader></app-loader>
+</ng-template>

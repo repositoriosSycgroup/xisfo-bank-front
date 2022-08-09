@@ -1,0 +1,101 @@
+@import 'src/styles'
+
+.div-dialog
+  background-color: $color-morado
+  min-height: 40vh
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  text-align: center
+  line-height: 40px
+  padding-top: 5%
+  p
+    font:
+      family: 'Dongle Bold'
+    color: #eee
+  #text-1
+    font-size: 70px
+  #text-2
+    font-size: 107px
+  #text-3
+    font-size: 115px
+  #text-4
+    font:
+      family: 'Comfortaa Regular'
+      size: 20px
+  .div-footer-dialog
+    position: absolute
+    bottom: 0
+    background-color: $color-amarillo
+    height: 20%
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+      padding-top: 25px
+      color: $color-morado
+      font-size: 50px
+.div-btn
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  background-color: $color-morado
+  padding: 10px 10px 0px 0px
+.div-img
+  display: flex
+  justify-content: center
+  background-color: $color-morado
+  img
+    width: 10%
+
+::ng-deep .p-dialog .p-dialog-header
+  padding: 0px
+  display: none
+
+::ng-deep .p-dialog .p-dialog-content
+  padding: 0px
+
+::ng-deep .p-dialog .p-dialog-footer
+  padding: 0px
+::ng-deep .pi-times:before
+  color: white
+
+@media (max-width: 1400px)
+  ::ng-deep .p-dialog
+    width: 65% !important
+  .div-dialog
+    line-height: 25px
+    min-height: 40vh
+    #text-1
+      font-size: 47px
+    #text-2
+      font-size: 71px
+    #text-3
+      font-size: 79px
+
+@media (max-width: 720px)
+  ::ng-deep .p-dialog
+    width: 95% !important
+  .div-dialog
+    line-height: 18px
+    min-height: 45vh
+    justify-content: center
+    #text-1
+      font-size: 32px
+    #text-2
+      font-size: 48px
+    #text-3
+      font-size: 53px
+    #text-4
+      font-size: 15px
+    .div-footer-dialog
+      height: 14%
+      p
+        font-size: 25px
+  .div-img
+    img
+      width: 20%
+      margin-bottom: -40px
+
+

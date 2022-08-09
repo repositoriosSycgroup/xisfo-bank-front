@@ -1,0 +1,64 @@
+@import 'src/styles'
+
+.div-responsive-testimonial
+  background-color: #eeeaf2
+  padding: 10%
+
+  #indica-testi
+    font-family: 'Comfortaa Regular'
+    color: $color-morado
+  #title-testimonial
+    margin: 20px
+    font-family: 'Dongle Bold'
+    font-size: 35px
+    color: $color-morado
+    line-height: 0.7
+
+  .cardSwiper
+    width: 200px
+    height: 310px
+    margin-top: 10%
+    margin-bottom: 20%
+
+    .swiper-slide
+      display: flex
+      align-items: center
+      justify-content: space-between
+      font-size: 18px
+      color: #fff
+      border-radius: 2%
+      p
+        font-family: 'Comfortaa Regular'
+      #dongle
+        font-family: 'Dongle Bold'
+        font-size: 40px
+
+    .swiper-slide:nth-child(1n)
+      background: linear-gradient(0deg, rgba(234,15,128,1) 0%, rgba(235,128,171,1) 27%, rgba(193,90,179,1) 55%, rgba(135,86,170,1) 100%)
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 0 5%
+      .title
+        padding-top: 25px
+        width: 100%
+        line-height: 0.5
+      .div-img
+        width: 120%
+        img
+          width: 225px
+    .swiper-slide:nth-child(2n)
+      justify-content: center
+      text-align: center
+      padding: 5%
+      background: $color-morado
+      font-size: 13px
+
+  @media (min-width: 600px)
+    .cardSwiper
+      width: 220px
+      height: 340px
+  @media (max-width: 360px)
+    .cardSwiper
+      width: 180px
+      height: 340px

@@ -1,0 +1,178 @@
+@import 'src/styles'
+
+@mixin animationFrond($seconds)
+  animation-name: changeCardFrond
+  animation-duration: 10s
+  animation-iteration-count: infinite
+  animation-delay: $seconds
+
+@mixin animationBack($seconds)
+  animation-name: changeCardBack
+  animation-iteration-count: infinite
+  animation-duration: 10s
+  animation-delay: $seconds
+
+@keyframes changeCardFrond
+  50%
+    transform: perspective(500px) rotateY(-180deg)
+
+@keyframes changeCardBack
+  50%
+    transform: perspective(500px) rotateY(-360deg)
+#title-nichos
+  color: $color-morado
+  font:
+    family: 'Dongle Bold'
+    weight: 900
+    size: 120px
+  text-align: center
+#click-p
+  display: none
+#cards-div
+  .col
+    justify-content: center
+    display: flex
+
+  .box-img
+    width: 100%
+    height: 100%
+    border-radius: 15%
+    object-fit: fill
+
+  .card-div
+    width: 260px
+    height: 260px
+    position: relative
+    margin-bottom: 9%
+    &:hover
+      .frond
+        transform: perspective(500px) rotateY(-180deg)
+      .back
+        transform: perspective(500px) rotateY(-360deg)
+    div
+      position: absolute
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      backface-visibility: hidden
+      transition: 1s
+
+    .frond
+      transform: perspective(500px) rotateY(-0deg)
+
+    .back
+      background-color: $color-morado
+      border-radius: 15%
+      padding: 10%
+      transform: perspective(500px) rotateY(-180deg)
+      p
+        margin-bottom: 0
+        text-align: center
+        color: #eee
+        font:
+          family: 'Dongle Bold'
+          weight: 600
+          size: 40px
+        line-height: 30px
+    #animate-frond
+      @include animationFrond(0s)
+    #animate-back
+      @include animationBack(0s)
+    #back-yellow
+      background-color: $color-amarillo
+      p
+        color: $color-morado
+        margin-bottom: 0
+
+    #frond-text
+      border-radius: 15%
+      background-color: $color-morado
+      p
+        text-align: center
+        color: #eee
+        font:
+          family: 'Dongle Bold'
+          weight: 600
+          size: 40px
+        line-height: 30px
+        margin-bottom: 0
+
+@media (max-width: 1450px)
+  #title-nichos
+    font-size: 90px
+  #cards-div
+    .card-div
+      width: 230px
+      height: 230px
+      .back
+        p
+          font-size: 35px
+
+@media (max-width: 1100px)
+  #title-nichos
+    font-size: 75px
+  #cards-div
+    .card-div
+      width: 200px
+      height: 200px
+      .back
+        p
+          font-size: 30px
+      #frond-text
+        p
+          font-size: 35px
+
+@media (max-width: 850px)
+  #title-nichos
+    font-size: 70px
+  #cards-div
+    .card-div
+      width: 180px
+      height: 180px
+      .back
+        p
+          font-size: 25
+          px
+      #frond-text
+        p
+          font-size: 30px
+
+@media (max-width: 770px)
+
+  #title-nichos
+    font-size: 55px
+    text-align: center
+    line-height: 50px
+  #cards-div
+    .card-div
+      width: 220px
+      height: 220px
+      .back
+        p
+          font-size: 30px
+      #frond-text
+        p
+          font-size: 30px
+
+@media (max-width: 690px)
+
+  #click-p
+    display: block
+    color: $color-morado
+    text-align: center
+  #cards-div
+    .card-div
+      width: 200px
+      height: 200px
+      .back
+        p
+          font-size: 30px
+          line-height: 15px
+      #frond-text
+        p
+          font-size: 25px
+          line-height: 15px
+
+

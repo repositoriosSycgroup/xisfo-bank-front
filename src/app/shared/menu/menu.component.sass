@@ -1,0 +1,343 @@
+@import 'src/styles'
+
+.center-content
+  text-align: center
+
+.column-logo
+  width: 22%
+  justify-content: center
+  justify-items: center
+  display: flex
+  @media(max-width: 950px)
+    width: 100%
+
+.column-menu
+  width: 80%
+  justify-content: center
+  justify-items: center
+  display: flex
+  @media(max-width: 950px)
+    width: 100%
+    display: none
+
+.column-button
+  width: 23%
+  @media(max-width: 950px)
+    width: 100%
+    display: none
+    padding: 0px
+
+.purpple.nav-general
+  display: flex
+  top: 0px
+  position: fixed
+  z-index: 999
+  align-content: space-between
+  background: $color-morado
+  padding: 15px
+  width: 100%
+  font-family: 'Dongle Bold'
+  @media(max-width: 950px)
+    position: relative
+    display: block
+    width: auto
+
+  .img_logo
+    width: 90%
+    margin: auto 5px
+    @media(max-width: 2550px)
+      width: 60%
+    @media(max-width: 1400px)
+      width: 80%
+    @media(max-width: 950px)
+      width: 23%
+
+.purpple.menu
+  list-style: none
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 11px 0px
+  padding: 0px
+  @media(max-width: 950px)
+    display: block
+
+  li
+    margin: 0px
+    padding: 0px
+
+  .link
+    text-decoration: none
+    color: $color-blanco
+    padding: 10px
+    font-size: 28px
+
+    &:hover
+      color: $color_amarillo
+
+    @media(max-width: 1150px)
+      font-size: 22px
+      padding: 10px
+
+    @media(max-width: 950px)
+      font-size: 28px
+
+  .dropdown
+    display: none
+    margin-top: 8px
+    position: absolute
+    z-index: 99
+    @media(max-width: 950px)
+      position: relative
+      width: 95%
+
+    ul
+      list-style: none
+      text-decoration: none
+      padding: 0px 10px
+      background: $color-morado
+
+    li
+      margin: 2px auto
+      background: $color-morado
+      border-radius: 4px
+
+    .link_sub
+      color: $color-blanco
+      text-decoration: none
+      font-size: 28px
+      border-radius: 6px
+      width: 200px
+      padding: 0px 10px
+      display: block
+      font-weight: 500
+      @media(max-width: 1150px)
+        font-size: 28px
+        width: 240px
+        padding: 10px
+      @media(max-width: 950px)
+        font-size: 24px
+        padding: 4px 10px
+
+  .active
+    &:hover .dropdown
+      display: block
+
+      a
+        color: $color-blanco
+        font-weight: 500
+
+        &:hover
+          color: $color-amarillo
+
+.purpple.btn-login
+  color: $color-blanco
+  background: transparent
+  text-transform: uppercase
+  padding: 3px 40px
+  border: 2px solid $color-blanco
+  border-radius: 50px
+  margin-top: 12px
+  font-weight: 600
+  font-size: 26px
+  height: 43px
+
+  &:hover
+    background: $color-amarillo
+    border: 1px solid $color-amarillo
+    color: $color-morado
+    font-weight: 500
+
+  @media(max-width: 1100px)
+    font-size: 28px
+  @media(max-width: 950px)
+    display: block
+    width: 90%
+    margin: auto
+
+.btn-menu-movil
+  display: none
+  position: fixed
+  z-index: 9999
+  background: $color_amarillo
+  padding: 14px 5px
+  border-radius: 50px
+  right: 14px
+  top: 18px
+  width: 50px
+  height: 50px
+  border: 1px solid $color-amarillo
+
+  .pi-align-justify
+    font-size: 18px
+    color: $color_morado
+
+  @media(max-width: 950px)
+    display: block
+  @media(max-width: 540px)
+    right: 14px
+    top: 8px
+
+
+.white.nav-general
+  display: flex
+  position: fixed
+  top: 0px
+  z-index: 9999
+  align-content: space-between
+  background: $color-blanco
+  padding: 15px
+  width: 100%
+  font-family: 'Dongle Bold'
+  @media(max-width: 950px)
+    display: block
+    width: auto
+
+  .img_logo
+    width: 90%
+    margin: auto 5px
+    @media(max-width: 2550px)
+      width: 60%
+    @media(max-width: 1400px)
+      width: 80%
+    @media(max-width: 950px)
+      width: 23%
+
+
+.white.menu
+  list-style: none
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 11px 0px
+  padding: 0px
+  color: $color_amarillo
+  @media(max-width: 950px)
+    display: block
+
+  li
+    margin: 2px
+    padding: 0px
+
+  .link
+    text-decoration: none
+    color: $color-morado
+    font-weight: 600
+    padding: 10px
+    font-size: 28px
+    &:hover
+      color: $color_amarillo
+
+    @media(max-width: 1150px)
+      font-size: 22px
+      padding: 10px
+    @media(max-width: 950px)
+      font-size: 28px
+
+  .dropdown
+    display: none
+    margin-top: 8px
+    position: absolute
+    z-index: 99
+    @media(max-width: 950px)
+      position: relative
+      width: 95%
+
+    ul
+      list-style: none
+      text-decoration: none
+      padding: 0px 10px
+      background: $color-blanco
+
+    li
+      margin: 2px auto
+      background: $color-blanco
+      border-radius: 4px
+
+    .link_sub
+      color: $color-morado
+      text-decoration: none
+      font-size: 28px
+      border-radius: 6px
+      width: 200px
+      padding: 4px
+      display: block
+      font-weight: 500
+      @media(max-width: 1150px)
+        font-size: 24px
+        width: 240px
+        padding: 10px
+      @media(max-width: 950px)
+        font-size: 28px
+        padding: 4px 10px
+
+      &:hover
+        color: $color-amarillo
+
+  .active
+    &:hover .dropdown
+      display: block
+
+      a
+        color: $color-morado
+        font-weight: 500
+
+        &:hover
+          color: $color-amarillo
+
+.white.btn-login
+  color: $color-morado
+  background: transparent
+  text-transform: uppercase
+  padding: 3px 40px
+  border: 2px solid $color-morado
+  border-radius: 50px
+  margin-top: 12px
+  font-weight: 600
+  font-size: 24px
+  height: 43px
+
+  &:hover
+    background: $color-amarillo
+    border: 1px solid $color-amarillo
+    color: $color-morado
+    font-weight: 500
+
+  @media(max-width: 1100px)
+    font-size: 24px
+  @media(max-width: 950px)
+    display: block
+    width: 90%
+    margin: auto
+
+.btn-menu-movil
+  display: none
+  position: fixed
+  z-index: 9999
+  background: $color_amarillo
+  padding: 14px 5px
+  border-radius: 50px
+  right: 14px
+  top: 18px
+  width: 50px
+  height: 50px
+  border: 1px solid $color-amarillo
+
+  .pi-align-justify
+    font-size: 18px
+    color: $color_morado
+
+  @media(max-width: 950px)
+    display: block
+  @media(max-width: 540px)
+    right: 14px
+    top: 8px
+
+.enableMenu
+  display: block
+
+.mobile-column
+  display: none
+  @media(max-width: 950px)
+    display: block
+

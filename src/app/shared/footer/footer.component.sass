@@ -1,0 +1,185 @@
+@import 'src/styles'
+
+.footer
+  background:
+    image: linear-gradient(rgba(100,79,134,0.9),rgba(100,79,134,0.9)),url('/assets/img/footer.webp')
+    repeat: no-repeat
+    size: 100%
+    position-y: 100%
+    position-x: center
+  width: 100%
+  height: 100%
+  display: flex
+  padding-top: 3%
+
+  .div-general-info
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    width: 100%
+    margin-bottom: 5%
+
+    .xisfo-info
+      width: 35%
+      margin:
+        left: 7%
+        right: 30px
+
+      p
+        margin-top: 15px
+        font:
+          family: 'Comfortaa Regular'
+          size: 20px
+        color: #fff
+
+      span
+        font:
+          family: 'Comfortaa Regular'
+        color: #fff
+
+      #xisfo-logo
+        width: 100%
+
+      #d-flex-center
+        display: flex
+        align-items: center
+        p
+          font-size: 17px
+          margin-right: 11px
+
+        .icon-img
+          width: 40px
+          height: 40px
+          margin-right: 8px
+
+    .div-columns
+      display: flex
+      justify-content: center
+      width: 80%
+
+      .column-info
+        display: flex
+        flex-direction: column
+        margin: 0% 8%
+        h2
+          font:
+            family: 'Comfortaa Regular'
+            weight: 800
+          color: $color-amarillo
+          margin-bottom: 20px
+
+        a
+          display: flex
+          text-align: center
+          text-decoration: none
+          font-family: 'Comfortaa Regular'
+          color: #fff
+          margin-bottom: 25px
+
+          &:hover
+            color: $color-amarillo
+
+.sub-footer
+  background:
+    color: $color-amarillo
+  width: 100%
+  bottom: 0
+  display: flex
+  text-align: center
+  flex-direction: column
+
+  #span-big
+    font-size: 15px
+
+  #span-small
+    margin-bottom: 5px
+
+  span
+    font-family: 'Comfortaa Regular'
+    margin:
+      top: 10px
+
+@media (max-width: 1100px)
+  .xisfo-info
+    width: 35% !important
+
+  .div-columns
+    width: 65% !important
+    display: flex
+    justify-content: space-evenly !important
+
+    .column-info
+      h2
+        font-size: 15px
+        cursor: pointer
+        &:hover
+          color: #eee !important
+      a
+        margin-bottom: 5px !important
+        font-size: small
+
+@media (max-width: 900px)
+
+  .div-columns
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: space-evenly !important
+
+    .column-info
+      text-align: center
+      h2
+        font-size: 20px
+      a
+        font-size: medium
+
+@media (max-width: 600px)
+
+  .div-general-info
+    flex-direction: column
+    align-items: center
+
+    .xisfo-info
+      width: 85% !important
+      margin-top: 15% !important
+      margin-bottom: 5% !important
+      p
+        text-align: center
+
+    .div-columns
+      width: 100% !important
+      margin-bottom: 5%
+      .accordion-collapse
+        margin-bottom: 10px
+        a
+          margin-bottom: 5px
+
+    .xisfo-info
+      .div-logo
+        display: flex
+        align-items: center
+        width: 100%
+        justify-content: center
+        #xisfo-logo
+          width: 50%
+
+      #d-flex-center
+        display: flex
+        align-items: center
+        flex-direction: column
+        margin-bottom: 15px
+        p
+          font-size: medium
+        span
+          font-size: medium
+        .div-logos
+          .icon-img
+            width: 35px
+            height: 35px
+
+  .sub-footer
+    #span-big
+      font-size: 12px !important
+    #span-small
+      font-size: 12px !important
+

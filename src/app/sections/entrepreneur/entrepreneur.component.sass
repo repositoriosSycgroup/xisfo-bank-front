@@ -1,0 +1,99 @@
+@import 'src/styles'
+
+.content-intro
+  background:
+    color: white
+  height: 80vh
+  z-index: 2
+
+.hrIntro
+  width: 8px
+  height: 20vh
+  border-radius: 50px
+  margin-top: 0%
+  margin-right: 10px
+  color: $color-amarillo
+  opacity: 1
+
+.content
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  height: 80%
+  background:
+    color:#6c4f92
+
+.text-intro
+  display: flex
+  flex-direction: column
+  width: 50%
+  padding: 0px
+  position: relative
+  z-index: 2
+  line-height: 0.7
+  font:
+    size: 100px
+    family: 'Dongle Bold'
+  p
+    color: white
+
+
+.text-one
+  background-color: $color-amarillo
+  width: 85%
+  height: 75px
+  display: flex
+  align-items: center
+  padding: 5px 0px 0px 10px
+  .p1
+    font-size: 90px
+    color:#6c4f92
+    margin-bottom: -11px
+    text-align: center
+
+.img-intro
+  padding-top: 35px
+  position: absolute
+  width: 45%
+  height: 80%
+  z-index: 100
+  img
+    height: 100%
+    width: 100%
+
+@media (max-width: 1630px) and (min-width: 1290px)
+  .text-one
+    .p1
+      font-size: 70px
+
+@media (max-width: 1290px) and (min-width: 10px)
+  .text-one
+    .p1
+      font-size: 55px
+
+@media (max-width: 800px) and (min-width: 699px)
+  .text-intro
+    font-size: 60px
+
+@media (max-width: 700px)
+  .content-intro
+    margin-bottom: -8px
+  .text-intro
+    width: 90%
+    font-size: 52px
+    line-height: 32px
+    .text-one
+      margin-bottom: 20px
+      font-size: 40px
+  img
+    display: none
+
+  .content-intro
+    height: 90vh
+
+  .content
+    height: 99%
+
+  .img-intro
+    display: none
+

@@ -1,0 +1,189 @@
+@import 'src/styles'
+
+.principal-div-segments
+  min-height: 90vh
+  background-color: #d8d1e0
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .slide-step
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .slide-left
+      display: flex
+      flex-direction: column
+      width: 50%
+
+      .person-type
+        background-color: $color-morado
+        width: 250px
+        height: 50px
+        display: flex
+        align-items: center
+        color: #eee
+        padding-left: 15px
+        font:
+          family: 'Comfortaa Regular'
+          size: 30px
+
+      .div-img
+        display: flex
+        justify-content: center
+        flex-direction: column
+
+        .img-slide
+          width: 80%
+          margin-left: 10%
+
+      #div-person
+        margin-top: 75px
+
+    .div-text
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: center
+      width: 60%
+      line-height: 0.48
+      text-align: justify
+      p
+        font:
+          family: 'Dongle Bold'
+        color:  $color-morado
+
+      #p1
+        font-size: 80px
+      #p2
+        font-size: 70px
+      #p3
+        font-size: 65px
+      #p4
+        font-size: 78px
+      #p5
+        margin: 2% 0
+        width: 70%
+        text-align: center
+        font:
+          family: 'Comfortaa Regular'
+          size: 20px
+        line-height: normal
+        color: #4d4d4d
+      #p6
+        font-size: 93px
+      #p7
+        font-size: 78px
+      #p8
+        font-size: 83px
+      #p9
+        font-size: 105px
+
+      .know-more
+        margin-top: 50px
+        display: flex
+        flex-direction: row
+        align-items: self-start
+        a
+          text-decoration: none
+          color: $color-morado
+
+@media (max-width: 1150px)
+  .principal-div-segments
+    .slide-step
+      .div-text
+        #p1
+          font-size: 66.5px
+        #p2
+          font-size: 58px
+        #p3
+          font-size: 55px
+        #p4
+          font-size: 65px
+        #p5
+          font:
+            size: 15px
+        #p6
+          font-size: 75px
+        #p7
+          font-size: 63px
+        #p8
+          font-size: 68px
+        #p9
+          font-size: 85px
+
+@media (max-width: 960px)
+  .principal-div-segments
+    .slide-step
+      .div-text
+        #p1
+          font-size: 50px
+        #p2
+          font-size: 44px
+        #p3
+          font-size: 41.5px
+        #p4
+          font-size: 50px
+        #p5
+          width: 80%
+          font:
+            size: 15px
+
+@media (max-width: 860px)
+  .principal-div-segments
+    .slide-step
+      .div-text
+        #p6
+          font-size: 55px
+        #p7
+          font-size: 47px
+        #p8
+          font-size: 50px
+        #p9
+          font-size: 64px
+
+@media (max-width: 730px)
+  .principal-div-segments
+    .slide-step
+      flex-direction: column
+      .div-text
+        width: 100%
+        .know-more
+          margin-top: 5%
+          padding-bottom: 15px
+      .slide-left
+        width: 100%
+        .div-img
+          margin: 8%
+          display: flex
+          justify-content: center
+          flex-direction: column
+          align-items: center
+          .img-slide
+            width: 60%
+            margin-left: 0
+
+@media (max-width: 400px)
+  .principal-div-segments
+    min-height: 660px !important
+    .slide-step
+      .div-text
+        #p1
+          font-size: 40px
+        #p2
+          font-size: 35px
+        #p3
+          font-size: 33px
+        #p4
+          font-size: 40px
+        #p6
+          font-size: 49px
+        #p7
+          font-size: 41px
+        #p8
+          font-size: 43px
+        #p9
+          font-size: 56px
+        #p5
+          font-size: 15px

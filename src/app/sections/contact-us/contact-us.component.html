@@ -1,0 +1,64 @@
+<div class="content-contact row">
+  <div class="contact-header col-12">
+    <div class="p-contact-header">
+      <h1 class="p-contact">¡AQUÍ CABEMOS TODOS!</h1>
+    </div>
+    <div class="p-contact-subheader">
+      <h3>Inscribete para saber como podemos atenderte</h3>
+    </div>
+  </div>
+  <div class="contact-body col-12 row">
+    <div class="contact-form col-lg-6 col-md-5 col-sm-10">
+      <form [formGroup]="form">
+        <div>
+          <input type="text" formControlName="name" id="name" placeholder="Nombre Completo">
+          <label class="text-danger validation"
+            *ngIf="form.get('name')?.hasError('pattern') && form.get('name')?.touched">*El campo es inválido</label>
+          <label class="text-danger validation"
+            *ngIf="form.get('name')?.hasError('required') && form.get('name')?.touched">*El campo es requerido</label>
+        </div>
+        <div>
+          <input type="text" formControlName="email" id="email" placeholder="Correo Electrónico">
+          <label class="text-danger validation"
+            *ngIf="form.get('email')?.hasError('pattern') && form.get('email')?.touched">*El campo es inválido</label>
+          <label class="text-danger validation"
+            *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">*El campo es requerido</label>
+        </div>
+        <div>
+          <input type="number" formControlName="phone" id="phone" placeholder="Teléfono" min="0">
+          <label class="text-danger validation"
+            *ngIf="form.get('phone')?.hasError('pattern') && form.get('phone')?.touched">*El campo es inválido</label>
+          <label class="text-danger validation"
+            *ngIf="form.get('phone')?.hasError('required') && form.get('phone')?.touched">*El campo es requerido</label>
+        </div>
+        <div>
+          <input type="text" formControlName="city" id="city" placeholder="Ciudad">
+          <label class="text-danger validation"
+            *ngIf="form.get('city')?.hasError('pattern') && form.get('city')?.touched">*El campo es inválido</label>
+          <label class="text-danger validation"
+            *ngIf="form.get('city')?.hasError('required') && form.get('city')?.touched">*El campo es requerido</label>
+        </div>
+        <div class="checkboxDiv">
+          <label>
+            <input type="checkbox" formControlName="politics" id="politics">
+            Acepto el uso de privacidad de datos
+          </label>
+        </div>
+      </form>
+      <div class="buttonDiv col-md-12 col-lg-9">
+        <p-progressSpinner [style]="{width: '50px', height: '50px'}" styleClass="custom-spinner" strokeWidth="8"
+          fill="#EEEEEE" animationDuration=".5s" *ngIf="isSending"></p-progressSpinner>
+        <button [disabled]="form.invalid || isSending" class="sendButton" (click)="postForm(form.value)">Enviar</button>
+      </div>
+    </div>
+    <div class="imgsDiv col-6">
+      <div class="contact-icons col-3">
+        <img id="icon-img" src="assets/img/Icono-Formulario-06.webp">
+      </div>
+      <div class="contact-img">
+        <img id="form-img" src="assets/img/Mujer-Formulario.webp" alt="Contacto Xisfo">
+      </div>
+    </div>
+  </div>
+</div>
+<p-toast position="bottom-center" key="tc"></p-toast>
