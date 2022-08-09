@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
+  production: true,
 
   //variables de validacion
   regrexEmail: '[a-zñA-ZÑ 0-9._%+-]{3,100}@[a-zñA-ZÑ0-9.-]{3,30}\.[a-zA-Z]{2,6}$',
