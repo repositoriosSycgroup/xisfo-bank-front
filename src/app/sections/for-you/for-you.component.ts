@@ -18,7 +18,7 @@ export class ForYouComponent implements OnInit {
   config: SwiperOptions = {
     loop : true,
     autoplay:{
-      delay: 2500,
+      delay: 6000,
       disableOnInteraction: true
     },
     pagination: true

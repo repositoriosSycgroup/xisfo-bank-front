@@ -1,8 +1,10 @@
 
 <div class="nav-general" [ngClass]="{'purpple' : style1, 'white' : style2}">
   <div class="column-logo center-content">
-    <img *ngIf="style1" class="img_logo" src=" ../../../../../assets/img/Xisfo-Blanco.webp" alt="xisfo-factory" />
-    <img *ngIf="!style1" class="img_logo" src=" ../../../../../assets/img/Xisfo-Mordado.webp" alt="xisfo-factory" />
+    <a href="#home">
+      <img *ngIf="style1" class="img_logo" src=" ../../../../../assets/img/Xisfo-Blanco.webp" alt="xisfo-factory" />
+      <img *ngIf="!style1" class="img_logo" src=" ../../../../../assets/img/Xisfo-Mordado.webp" alt="xisfo-factory" />
+    </a>
   </div>
   <div class="column-menu" [ngClass]="{'enableMenu' : mobileMenu}">
     <ul class="menu" [ngClass]="{'purpple' : style1, 'white' : style2}">
