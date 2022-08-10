@@ -3,6 +3,9 @@
 .content-carousel
   position: relative
   overflow: hidden
+  display: block
+  @media(max-width: 790px)
+    display: none
   h1
     text-align: center
     margin-bottom: 20px
@@ -17,9 +20,11 @@
   height: 800px
   width: 700px
   left: 52%
+
   /* or absolute
   @media (max-width: 790px)
     left: 57%
+    height: 630px
 
 
 .carousel__cell
@@ -47,7 +52,8 @@
   @media (max-width: 500px)
     background: #000
     right: 6%
-    left: 0px
+    left: -31px
+    top: -61px
     padding: 4px
 
 .prev_btn
@@ -89,4 +95,16 @@
     background: $color-amarillo
     color: $color-blanco
     border: 2px solid $color-amarillo
+
+.content-carousel-mobile
+  position: relative
+  display: none
+  @media(max-width: 790px)
+    display: block
+  .name_auth
+    padding: 0px 0px 50px 0px
+    color: $color-morado
+    text-align: center
+    font-size: 16px
+
 

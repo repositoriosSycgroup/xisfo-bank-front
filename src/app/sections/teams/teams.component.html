@@ -1,4 +1,4 @@
-<div id="team" class="content-carousel">
+<div  id="team" class="content-carousel">
   <h1>QUIÉNES LO HACEN POSIBLE...</h1>
   <div class="carousel">
     <div
@@ -12,10 +12,31 @@
   </div>
     <button class="prev_btn" (click)="prev()">
       <i class="pi pi-chevron-left"></i>
-
     </button>
     <button class="next_btn" (click)="next()">
       <i class="pi pi-chevron-right"></i>
     </button>
+</div>
+
+<div class="content-carousel-mobile">
+  <swiper
+    #swiper
+    [slidesPerView]="1"
+    [config]="config"
+    [navigation]="false"
+    [scrollbar]="{ draggable: true }"
+  >
+    <ng-template *ngFor="let team of teams" swiperSlide>
+      <img [src]="team.img" [alt]="team.name" style="width: 90%;     right: -24px;
+    position: relative;" />
+      <h3 class="name_auth">{{team.name}}</h3>
+    </ng-template>
+  </swiper>
+  <button  class="prev_btn" (click)="slidePrev()" >
+    <i class="pi pi-chevron-left"></i>
+  </button>
+  <button class="next_btn" (click)="slideNext()" >
+    <i class="pi pi-chevron-right"></i>
+  </button>
 </div>
 
