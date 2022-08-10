@@ -1,19 +1,21 @@
 @import 'src/styles'
 
+#title-teams
+  text-align: center
+  margin-bottom: 20px
+  font:
+    family: 'Dongle Bold'
+    weight: 500
+    size: 80px
+  color: $color-morado
+
 .content-carousel
   position: relative
   overflow: hidden
   display: block
   @media(max-width: 790px)
     display: none
-  h1
-    text-align: center
-    margin-bottom: 20px
-    font:
-      family: 'Dongle Bold'
-      weight: 500
-      size: 80px
-    color: $color-morado
+
 
 .carousel
   position: relative
@@ -26,6 +28,13 @@
     left: 57%
     height: 630px
 
+    #title-teams
+      font:
+        size: 38px
+@media (max-width: 790px)
+  #title-teams
+    font:
+      size: 38px
 
 .carousel__cell
   position: absolute

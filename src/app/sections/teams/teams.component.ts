@@ -70,7 +70,7 @@ export class TeamsComponent implements OnInit, AfterViewInit, OnDestroy {
     {
       id: 12,
       img: '../../../assets/img/Team/yesica_guzman.webp',
-      name: 'Directora de Mercadeo',
+      name: 'Líder de Mercadeo',
     },
     {
       id: 14,
@@ -80,7 +80,7 @@ export class TeamsComponent implements OnInit, AfterViewInit, OnDestroy {
     {
       id: 16,
       img: '../../../assets/img/Team/aleja_marin.webp',
-      name: 'Directora de Recursos Humanos',
+      name: 'Líder de Recursos Humanos',
     },
   ];
 
