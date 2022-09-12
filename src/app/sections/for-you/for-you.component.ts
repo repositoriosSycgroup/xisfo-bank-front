@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Autoplay, SwiperOptions } from 'swiper';
 import { SwiperComponent } from 'swiper/angular';
-import SwiperCore, {Pagination} from 'swiper';
+import SwiperCore, {Pagination, Navigation} from 'swiper';
 
-SwiperCore.use([Pagination, Autoplay]);
+SwiperCore.use([Pagination, Autoplay, Navigation]);
 
 @Component({
   selector: 'app-for-you',
@@ -21,7 +21,8 @@ export class ForYouComponent implements OnInit {
       delay: 6000,
       disableOnInteraction: true
     },
-    pagination: true
+    pagination: true,
+    navigation: true
   }
 
   constructor() { }
